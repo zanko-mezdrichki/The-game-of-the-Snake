@@ -6,7 +6,7 @@
 #include <vector>
 
 
-#include "tabellone.hpp"
+#include "board.hpp"
 
 namespace tabellone {
 void infoeregolamento() {

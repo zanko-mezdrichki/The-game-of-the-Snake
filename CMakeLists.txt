@@ -1,50 +1,66 @@
 cmake_minimum_required(VERSION 3.16)
-project(mandelbrot_sfml VERSION 0.1.0)
+project(TheGameOfTheSnake VERSION 0.1 LANGUAGES CXX)
 
-# abilita il supporto per i test, tra cui l'opzione BUILD_TESTING usata sotto
 include(CTest)
-
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-# richiedi l'uso di C++17, senza estensioni non-standard offerte dal compilatore usato 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-# abilita warning
-string(APPEND CMAKE_CXX_FLAGS
-      " -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion"
-      " -Wshadow -Wimplicit-fallthrough -Wextra-semi -Wold-style-cast")
+option(ENABLE_SANITIZERS "Enable sanitizers in Debug builds" OFF)
 
-# abilita asserzioni di debug (in gcc), l'address sanitizer e l'undefined-behaviour sanitizer in debug mode
-string(APPEND CMAKE_CXX_FLAGS_DEBUG " -D_GLIBCXX_ASSERTIONS -fsanitize=address,undefined -fno-omit-frame-pointer")
-string(APPEND CMAKE_EXE_LINKER_FLAGS_DEBUG " -fsanitize=address,undefined -fno-omit-frame-pointer")
+# warning options
+add_compile_options(
+  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion
+  -Wshadow -Wimplicit-fallthrough -Wextra-semi -Wold-style-cast
+)
 
-# richiedi il componente graphics della libreria SFML, versione 2.5
-#   le dipendenze vengono identificate automaticamente
+# sanitizers in Debug
+if (ENABLE_SANITIZERS AND CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
+  add_compile_options($<$<CONFIG:Debug>:-fsanitize=address,undefined>)
+  add_link_options($<$<CONFIG:Debug>:-fsanitize=address,undefined>)
+endif()
+
+# Cerca i .cpp in src/
+file(GLOB_RECURSE SRC_FILES CONFIGURE_DEPENDS "${CMAKE_SOURCE_DIR}/src/*.cpp")
+
+# Dipendenza SFML
 find_package(SFML 2.5 COMPONENTS graphics REQUIRED)
 
-add_executable(gioco tabellonefunzioni.cpp  giocofunzioni.cpp giocomain.cpp )
+# --- Eseguibile principale ---
+add_executable(gioco ${SRC_FILES})
+
+# Include directories
+target_include_directories(gioco PRIVATE ${CMAKE_SOURCE_DIR}/include)
+
+# Link SFML
 target_link_libraries(gioco PRIVATE sfml-graphics)
 
-# se il testing e' abilitato...
-#   per disabilitare il testing, passare -DBUILD_TESTING=OFF a cmake durante la fase di configurazione
-if (BUILD_TESTING)
-# richiedi il componente graphics della libreria SFML, versione 2.5
-#   le dipendenze vengono identificate automaticamente
-find_package(SFML 2.5 COMPONENTS graphics REQUIRED)
-  # aggiungi l'eseguibile all.t
-  add_executable(functions.t functiontest.cpp )
-  target_link_libraries(functions.t PRIVATE sfml-graphics)
-  # add_executable(all.t all.t.cpp complex.t.cpp)
-  # aggiungi l'eseguibile all.t alla lista dei test
-  add_test(NAME functions.t COMMAND functions.t)
-  # add_test(NAME all.t COMMAND all.t)
-  add_executable(tabellonetest.t tabellonetest.cpp )
-  target_link_libraries(tabellonetest.t PRIVATE sfml-graphics)
-  # add_executable(all.t all.t.cpp complex.t.cpp)
-  # aggiungi l'eseguibile all.t alla lista dei test
-  add_test(NAME tabellonetest.t COMMAND tabellonetest.t)
-  # add_test(NAME all.t COMMAND all.t)
+# Directory di output (dove finisce l’eseguibile)
+set_target_properties(gioco PROPERTIES
+  RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin
+)
 
+# Copia gli asset dopo la compilazione
+add_custom_command(TARGET gioco POST_BUILD
+  COMMAND ${CMAKE_COMMAND} -E make_directory "$<TARGET_FILE_DIR:gioco>/assets"
+  COMMAND ${CMAKE_COMMAND} -E copy_directory "${CMAKE_SOURCE_DIR}/assets" "$<TARGET_FILE_DIR:gioco>/assets"
+  COMMAND ${CMAKE_COMMAND} -E copy_directory "${CMAKE_SOURCE_DIR}/immagini_e_font" "$<TARGET_FILE_DIR:gioco>/assets/immagini_e_font"
+  COMMENT "Copying assets to runtime folder"
+)
+
+# --- Test ---
+if (BUILD_TESTING)
+  file(GLOB TEST_SOURCES "${CMAKE_SOURCE_DIR}/tests/*.cpp")
+  foreach(tfile ${TEST_SOURCES})
+    get_filename_component(tname ${tfile} NAME_WE)
+    add_executable(${tname} ${tfile})
+    target_include_directories(${tname} PRIVATE ${CMAKE_SOURCE_DIR}/include)
+    target_link_libraries(${tname} PRIVATE sfml-graphics)
+    set_target_properties(${tname} PROPERTIES
+      RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin/tests
+    )
+    add_test(NAME ${tname} COMMAND ${CMAKE_BINARY_DIR}/bin/tests/${tname})
+  endforeach()
 endif()

@@ -4,8 +4,8 @@
 #include <random>
 #include <vector>
 
-#include "gioco.hpp"
-#include "tabellone.hpp"
+#include "game.hpp"
+#include "board.hpp"
 namespace gioco {
 void movimento(std::vector<giocatore>& giocatori, size_t j, const int lunghezza,
                const std::vector<std::string>& tabellone, const long unsigned int ngiocatori,

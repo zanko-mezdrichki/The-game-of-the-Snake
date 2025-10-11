@@ -2,8 +2,8 @@
 #include <iostream>
 #include <vector>
 
-#include "gioco.hpp"
-#include "tabellone.hpp"
+#include "game.hpp"
+#include "board.hpp"
 
 int main() {
   std::ifstream domande("domande.txt");
