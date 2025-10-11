@@ -1,0 +1,239 @@
+Domanda 1
+Quanti pianeti ci sono nel sistema solare?\n
+A 10
+B 5
+C 9
+D 8
+[Risposta D]
+
+Domanda 2
+Quali sono le unità più piccole delle quali si compone la materia?
+A Atomi
+B Ossigeno e carbonio
+C Proteine
+D  Virus
+[Risposta A]
+
+Domanda 3
+Le macromolecole biologiche sono:
+A amminoacidi, vitamine e proteine
+B glicerolo, trigliceridi e acidi nucleici
+C acqua, sali inorganici e ioni
+D proteine, acidi nucleici, lipidi e polisaccaridi
+[Risposta D]
+
+Domanda 4
+Il pH fisiologico all’interno della cellula è:
+A 13.0
+B 2.5
+C 7.4
+D 10.4
+[Risposta C]
+
+Domanda 5
+Le molecole anfipatiche:
+A Possiedono nella loro molecola porzioni polari e porzioni apolari
+B Possiedono nella loro molecola solo porzioni apolari
+C Possiedono nella loro molecola solo porzioni polari
+D Non possiedono nella loro molecola né porzioni polari né porzioni apolari
+[Risposta A]
+
+Domanda 6
+Quale delle seguenti sostanze NON viene prodotta dall'uomo?
+A Insulina
+B Emoglobina
+C Saccarosio
+D Acidi nucleici
+[Risposta C]
+
+Domanda 7
+L'anno luce è l'unità di misura di:
+A una frequenza
+B una distanza
+C una accelerazione
+D una velocità
+[Risposta B]
+
+Domanda 8
+1 Å vale:
+A 10^-8 m
+B 10^-9 m
+C 10^-10 m
+D 10^-11 m
+[Risposta C]
+
+Domanda 9
+Quanti palloni d'oro ha vinto Messi?
+A 8
+B 9
+C 5
+D 6
+[Risposta A]
+
+Domanda 10
+Quanti Oscar ha vinto Leonardo Di Caprio?
+A 0
+B 1
+C 2
+D Non è mai stato candidato
+[Risposta B]
+
+Domanda 11
+Chi dei seguenti scienziati ha vinto 2 premi Nobel?
+A Alexander Fleming
+B Albert Einstein
+C Marie Curie
+D Enrico Fermi
+[Risposta C]
+
+Domanda 12
+Il valore dell'accelerazione gravitazionale nel Sistema Internazionale di unità di misura, mediamente può essere assunto pari a:
+A 9.8 cm/s^2
+B 9800 cm/s^2
+C 9.8 m/s^2
+D 98 m/s^2
+[Risposta C]
+
+Domanda 13
+9. Un corpo di massa m al variare del tempo si sposta senza attrito a velocità costante v. La risultante F delle forze applicate sarà:
+A F = m*v
+B F = 0
+C F = m/v
+D F = m*g
+[Risposta B]
+
+Domanda 14
+Un corpo è soggetto contemporaneamente a due forze di 10 N. A quale forza risultante è soggetto il corpo?
+A 20 N
+B 10 √2 N
+C 0 N
+D I dati non sono sufficienti per consentire una risposta
+[Risposta D]
+
+Domanda 15
+Chi fra i seguenti é l'artista più ascoltato su Spotify al momento?
+A Drake
+B The Weekend
+C Kanye West
+D Taylor Swift
+[Risposta D]
+
+Domanda 16
+Qual é L'album più venduto della storia?
+A Thriller - Michel Jackson
+B Back in Black - AC/DC
+C The Bodyguard - Whitney Huston
+D The Dark Side of the Moon - Pink Floyd
+[Risposta A]
+
+Domanda 17
+L'accelerazione di gravità sulla Luna è circa 1/6 di quella sulla Terra. La massa di una persona che si trova sulla Luna è:
+A 1/6 di quella che ha sulla Terra
+B 6 volte quella che ha sulla Terra
+C uguale a quella che ha sulla Terra
+D 1/36 di quella che ha sulla Terra
+[Risposta C]
+
+Domanda 18
+Il centro di massa di un sistema di particelle si muove di moto uniformemente accelerato:
+A quando le particelle non interagiscono tra loro
+B quando la risultante delle forze esterne che agiscono sulle particelle è costante
+C quando le particelle interagiscono esclusivamente tra loro
+D quando le particelle sono in numero pari
+[Risposta B]
+
+Domanda 19
+Quanti sono i membri dell'Unione Europea?
+A 27
+B 28
+C 29
+D 30
+[risposta A]
+
+Domanda 20
+Quali di questi paesi NON confina con l'Italia?
+A Slovenia
+B Austia
+C Croazia
+D Francia
+[Risposta C]
+
+Domanda 21
+Chi è l'attuale primo ministro in Italia?
+A Giorgia Meloni
+B Giuseppe Conte
+C Mario Draghi
+D Sergio Mattarella
+[Risposta A]
+
+Domanda 22
+Quanto è alto il monte Everest?
+A 8029 m
+B 8658 m
+C 8923 m
+D 8849 m
+[Risposta D]
+
+Domanda 23
+Una automobile percorre una curva di raggio 20 m con una velocità scalare costante di 40 km/h. L'accelerazione dell'automobile è:
+A uguale a zero
+B tangente alla curva
+C diretta come il raggio e rivolta verso l'interno della curva
+D diretta come il raggio e rivolta verso l'esterno della curva
+[Risposta C]
+
+Domanda 24
+Indicare quale delle seguenti relazioni tra grandezze fisiche è dimensionalmente CORRETTA:
+A (lavoro)/(spostamento) = (forza)
+B (massa)*(velocità) = (forza)
+C (massa)*(spostamento) = (forza)
+D (potenza)*(velocità) = (forza)
+[Risposta A]
+
+Domanda 25
+Qual è l'edificio più alto mai costruito?
+A Empire State Building
+B Burj Khalifa
+C Torre Eiffel
+D Chrysler Building
+[Risposta B]
+
+Domanda 26
+In che anno è terminata la seconda guerra mondiale in Italia?
+A 1944
+B 1945
+C 1946
+D 1947
+[Risposta B]
+
+Domanda 27
+Quando è sbarcato l'uomo sulla Luna?
+A 20 luglio 1968
+B 11 luglio 1969
+C 15 luglio 1968
+D 20 luglio 1969
+[Risposta D]
+
+Domanda 28
+Quanti Mondiali ha vinto l'Italia?
+A 3
+B 2
+C 4
+D 5
+[Risposta C]
+
+Domanda 29
+Quale dei seguenti pittori non appertiene al movimento artistico dell'impressionismo?
+A Claude Monet 
+B Pierre-Auguste Renoir
+C Pablo Picasso
+D Édouard Manet 
+[Risposta C]
+
+Domanda 30
+Chi Ha dipinto "La Scuola di Atene"?
+A Raffaello
+B Michelangelo
+C Leonardo
+D Donatello
+[Risposta A]

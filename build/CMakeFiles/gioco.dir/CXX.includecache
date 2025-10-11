@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zanko/pf_labs/progetto/gioco.hpp
+struct.hpp
+/home/zanko/pf_labs/progetto/struct.hpp
+
+/home/zanko/pf_labs/progetto/giocofunzioni.cpp
+algorithm
+-
+iostream
+-
+random
+-
+vector
+-
+gioco.hpp
+/home/zanko/pf_labs/progetto/gioco.hpp
+tabellone.hpp
+/home/zanko/pf_labs/progetto/tabellone.hpp
+
+/home/zanko/pf_labs/progetto/struct.hpp
+SFML/Graphics.hpp
+-
+
+/home/zanko/pf_labs/progetto/tabellone.hpp
+struct.hpp
+/home/zanko/pf_labs/progetto/struct.hpp
+
