@@ -53,6 +53,10 @@ Detailed documentation is available in the relazione folder(in italian).
 
 Some names have been changed, additionally the part about bonuses/maluses and the final podium is missing, which were added later.
 
+It was a group project carried out during the Programming course of the Bachelor's degree in Physics at UNIBO. 
+
+I improved the code and implemented new features to make the gaming experience more enjoyable.
+
 # File structure
 ```plaintext
 The-game-of-the-Snake/               
