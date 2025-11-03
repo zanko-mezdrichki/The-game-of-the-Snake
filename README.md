@@ -37,7 +37,7 @@ Run the game executable:
 ```bash
 ./build/bin/gioco
 ```
-Follow the on-screen instructions to start a new game.(Language:Italian)
+Follow the on-screen instructions to start a new game. (Language:Italian)
 ## 🧪 **Running Tests**
 
 The project includes unit tests using the doctest
