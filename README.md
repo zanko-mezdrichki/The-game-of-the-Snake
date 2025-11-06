@@ -21,6 +21,7 @@ Clone the repository to your local machine:
 git clone https://github.com/Zazza2003/The-game-of-the-Snake.git
 ```
 🧱 **Build the Project**
+Before starting, change the name of the assets directory in "immagini_e_font".
 
 Navigate to the project directory:
 ```bash
