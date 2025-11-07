@@ -22,8 +22,6 @@ git clone https://github.com/Zazza2003/The-game-of-the-Snake.git
 ```
 🧱 **Build the Project**
 
-Before starting, change the name of the assets directory in "immagini_e_font".
-
 Navigate to the project directory:
 ```bash
 cd The-game-of-the-Snake
@@ -40,6 +38,13 @@ Run the game executable:
 ./build/bin/gioco
 ```
 Follow the on-screen instructions to start a new game. (Language:Italian)
+
+## 🕹️ Preview
+
+In the preview folder there are images showing the rules and the board of the game.
+
+To see the game: [https://youtu.be/RDunHgcyyEI](https://youtu.be/RDunHgcyyEI)
+
 ## 🧪 **Running Tests**
 
 The project includes unit tests using the doctest
@@ -62,7 +67,7 @@ I improved the code and implemented new features to make the gaming experience m
 # File structure
 ```plaintext
 The-game-of-the-Snake/               
-├── assets/
+├── immagini_e_font/
 |   └── ...                  
 ├── docs/                   
 │   ├── relazione
