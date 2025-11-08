@@ -2,25 +2,21 @@
 
 A C++ console board game inspired by The Game of the Goose. Players roll dice to move across a dynamic board filled with traps, bonuses, and random events.
 
-## 📦 **Installation**
-
-🛠️ **Prerequisites**
+# Installation
 
 Ensure you have the following installed:
 
-A C++ compiler (e.g., GCC, Clang, MSVC)
+- A C++ compiler (e.g., GCC, Clang, MSVC)
 
-CMake (for building the project)
+- CMake (for building the project)
 
-SFML
+- SFML
 
-📥 **Clone the Repository**
-
-Clone the repository to your local machine:
+1) **Clone the repository**:
 ```bash
 git clone https://github.com/Zazza2003/The-game-of-the-Snake.git
 ```
-🧱 **Build the Project**
+2) **Build the Project**
 
 Navigate to the project directory:
 ```bash
@@ -31,21 +27,21 @@ Run CMake to configure the project:
 cmake -S . -B build -DCMAKE_BUILD_TYP
 cmake --build build -j$(nproc)E=Release
 ```
-## 🎮 **How to Play**
 
-Run the game executable:
+3) **Run the game executable**:
 ```bash
 ./build/bin/gioco
 ```
-Follow the on-screen instructions to start a new game. (Language:Italian)
 
-## 🕹️ Preview
+4) Follow the on-screen instructions to start a new game and play. (Language:Italian)
+
+# Preview
 
 In the preview folder there are images showing the rules and the board of the game.
 
 To see the game: [https://youtu.be/RDunHgcyyEI](https://youtu.be/RDunHgcyyEI)
 
-## 🧪 **Running Tests**
+# Running Tests
 
 The project includes unit tests using the doctest
  framework.
@@ -54,7 +50,7 @@ To run tests:
 ```bash
 cmake --build build --target test
 ```
-## 📄 **Documentation**
+# Documentation
 
 Detailed documentation is available in the relazione folder(in italian). 
 
@@ -93,6 +89,6 @@ The-game-of-the-Snake/
 ```
 
 
-## 📄 **License**
+# License
 
 This project is licensed under the [MIT License](./LICENSE). See the LICENSE file for more details.
